@@ -2,19 +2,9 @@ const counterReducer = (state,action) =>{
 
     switch(action.type){
         case "increment":
-         return (
-            {
-                ...state,
-                counter : action.counter+1
-            }
-         )   
+         return state+1;
         case "decrement":
-         return (
-            {
-                ...state,
-                counter : action.counter-1
-            }
-         )  
+         return state-1;
          
          default : state ;
     }
